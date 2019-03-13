@@ -1,4 +1,9 @@
 import java.io.IOException;
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+
 public class Produto implements Entidade {
     private int id;
     private String nome;
@@ -11,9 +16,9 @@ public class Produto implements Entidade {
         this.id = -1;
         this.nome = "";
         this.descricao = "";
-        this.preco = 0.0;
+        this.preco = 0f;
         this.quantidade = 0;
-        this.peso = 0.0;
+        this.peso = 0f;
     }
 
     public Produto(int id, String nome, String descricao, float preco, int quantidade, float peso) {
